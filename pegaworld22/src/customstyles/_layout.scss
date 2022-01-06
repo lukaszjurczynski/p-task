@@ -1,11 +1,13 @@
 app-root {
     header {
-
+        background-color: #fff;
+        padding: 5px $default-gutter;
+        border-bottom: $border;
     }
     aside {
-
+    background-color: $background-color-navigation;
     }
     main {
-        
+        background-color: $background-color;
     }
 }

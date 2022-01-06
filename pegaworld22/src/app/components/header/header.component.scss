@@ -1,0 +1,59 @@
+@import "src/customstyles/index";
+
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+a {
+    display: inline-flex;
+    max-width: 50px;
+    margin: 0 10px 0 0; 
+    .logo {
+        width: 100%;
+    }
+}
+.title {
+   color: $text-color-heading;
+   margin-right: auto;
+   @media(max-width: $size-s) {
+       display: none;
+   }
+}
+
+.searchbar {
+    max-width: 350px;
+    flex-grow: 1;
+    &__form {
+        background-color: $background-color;
+        border-radius: $border-radius-input;
+        display: flex;
+        height: 35px;
+        padding: 0 10px;
+
+        .searchicon {
+            max-width: 20px;
+            opacity: .3;
+        }
+        .input {
+            border: unset;
+            background-color: unset;
+            color: $text-color;
+            width: 100%;
+            &::placeholder {
+                color: rgba($text-color, .6);
+            }
+            &:focus-visible {
+                outline: none;
+                &::placeholder {
+                    color: transparent;
+                }
+            }
+        }
+    }
+}
+.user {
+    margin-left: auto;
+}

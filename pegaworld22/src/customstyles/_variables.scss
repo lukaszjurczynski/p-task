@@ -1,7 +1,19 @@
 
 $color-primary: #076bc9;
 $text-color: #696969;
-$heading-color: #050505;
+$text-color-heading: #050505;
 
 $background-color: #e9eef3;
 $background-color-navigation: #252c32;
+$background-button-round: lighten($background-color-navigation, 25%);
+
+$default-gutter: 20px;
+
+$border-radius-input: 30px;
+$round-radius: 50%;
+
+$border-color: #cfcfcf;
+$border: 1px solid $border-color;
+
+// MEDIA QUERIES
+$size-s: 450px;
