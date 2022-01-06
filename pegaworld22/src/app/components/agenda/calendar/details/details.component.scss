@@ -1,0 +1,64 @@
+@import "src/customstyles/index";
+
+:host {
+    padding: $default-gutter;
+    flex-grow: 1;
+    
+}
+
+.container {
+    background-color: #fff;
+    padding: $default-gutter;
+    display: block;
+    width: 100%;
+    border-radius: $icon-radius;
+    .details {
+        .title {
+            @include typography-title;
+        }
+        .for-day {
+            .date {
+                margin-top: $default-gutter;
+                @include typography-date;
+            }
+            .event {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                &:not(:last-of-type) {
+                    margin-bottom: 10px;
+                }
+                .time {
+                    display: flex;
+                    flex-direction: column;
+                    border-right: $border;
+                    padding-right: 10px;
+                    .start {
+                        font-size: $title-font-size;
+                        color: $text-color-heading;
+                        font-weight: 700;
+                    }
+                    .end {
+                        color: $text-color;
+                        font-size: 1rem;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                }
+                .title {
+                    margin: 0;
+                    .link {
+                        color: $color-primary;
+                        text-decoration: unset;
+                        font-weight: 400;
+                        &:hover {
+                            cursor: pointer;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

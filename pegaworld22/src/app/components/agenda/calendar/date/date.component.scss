@@ -3,6 +3,10 @@
 :host {
     min-width: 350px;
     background-color: #fff;
+    @media(max-width: $size-m) {
+        width: 100%;
+        min-width: 250px;
+    }
 }
 
 .date-header {
@@ -100,6 +104,9 @@
             &.active {
                 background-color: $color-primary;
                 color: #fff;
+            }
+            &.semi-active {
+                background-color: rgba($color-primary, .2);
             }
         }
     }

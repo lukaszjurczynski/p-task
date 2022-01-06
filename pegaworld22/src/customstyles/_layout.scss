@@ -2,6 +2,9 @@ app-root {
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
+    width: 100%;
+    align-content: flex-start;
+    align-items: stretch;
     header {
         flex-basis: 100%;
         background-color: #fff;
@@ -13,10 +16,18 @@ app-root {
         background-color: $background-color-navigation;
         max-width: 90px;
         flex: 1;
-        height: calc(100% - 60px);
         padding: $default-gutter;
+        min-height: 100%;
+        @media(max-width: $size-l) {
+            height: 80px;
+            max-width: unset;
+            width: 100%;
+            flex-basis: 100%;
+        }
     }
     main {
         background-color: $background-color;
+        flex-grow: 1;
+        width: calc(100% - 90px);
     }
 }

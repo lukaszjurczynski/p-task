@@ -18,4 +18,22 @@ $border-color: #cfcfcf;
 $border: 1px solid $border-color;
 
 // MEDIA QUERIES
+$size-l: 900px;
+$size-m: 650px;
 $size-s: 450px;
+
+$title-font-size: 1.8rem;
+$date-font-size: 1.4rem;
+
+@mixin typography-title {
+    margin: 0 0 $default-gutter;
+    font-size: $title-font-size;
+    color: $text-color-heading;
+    font-weight: 700;
+}
+
+@mixin typography-date {
+    font-size: $date-font-size;
+    color: $text-color;
+    font-weight: 400;
+}
