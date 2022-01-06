@@ -1,0 +1,91 @@
+@import "src/customstyles/index";
+
+:host {
+
+}
+
+.links {
+    padding: 0;
+    margin: 0;
+    &__item {
+        list-style-type: none;
+        &:not(:last-of-type) {
+            margin-bottom: $default-gutter;
+        }
+    }
+    &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding-top: 25px;
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+            &:before {
+                opacity: 0;
+                transition-delay: .2s;
+
+            }
+            &:after {
+                transform: translateX(-50%) scale(1);
+            }
+        }
+        
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            transform: translateX(-50%);
+            filter: invert(96%) sepia(6%) saturate(67%) hue-rotate(155deg) brightness(81%) contrast(86%);
+            background-repeat: no-repeat;
+            opacity: 1;
+        }
+        &:after {
+            transform: translateX(-50%) scale(0);
+            transition: transform .2s ease-out;
+        }
+
+        &.home {
+            &:before {
+                background-image: url(/assets/images/icons/icon-home-empty.svg);
+            }
+            &:after {
+                background-image: url(/assets/images/icons/icon-home.svg);
+            }
+        }
+        &.calendar {
+            &:before {
+                background-image: url(/assets/images/icons/icon-calendar-empty.svg);
+            }
+            &:after {
+                background-image: url(/assets/images/icons/icon-calendar.svg);
+            }
+        }
+        &.calendar-add {
+            &:before {
+                background-image: url(/assets/images/icons/icon-calendar-add-empty.svg);
+            }
+            &:after {
+                background-image: url(/assets/images/icons/icon-calendar-add.svg);
+            }
+        }
+        &.attendees {
+            &:before {
+                background-image: url(/assets/images/icons/icon-attendees-empty.svg);
+            }
+            &:after {
+                background-image: url(/assets/images/icons/icon-attendees.svg);
+            }
+        }
+        &__description {
+            color: $text-link-white;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

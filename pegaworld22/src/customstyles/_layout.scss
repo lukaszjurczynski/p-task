@@ -1,11 +1,20 @@
 app-root {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
     header {
+        flex-basis: 100%;
         background-color: #fff;
         padding: 5px $default-gutter;
         border-bottom: $border;
+        max-height: 60px;
     }
     aside {
-    background-color: $background-color-navigation;
+        background-color: $background-color-navigation;
+        max-width: 90px;
+        padding: $default-gutter;
+        flex: 1;
+        height: calc(100% - 60px);
     }
     main {
         background-color: $background-color;
