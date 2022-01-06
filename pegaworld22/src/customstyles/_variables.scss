@@ -7,11 +7,12 @@ $text-link-white: #bec0c1;
 $background-color: #e9eef3;
 $background-color-navigation: #252c32;
 $background-button-round: lighten($background-color-navigation, 25%);
-
+$background-heading-icons: darken($color-primary, 10%);
 $default-gutter: 20px;
 
 $border-radius-input: 30px;
 $round-radius: 50%;
+$icon-radius: 5px;
 
 $border-color: #cfcfcf;
 $border: 1px solid $border-color;

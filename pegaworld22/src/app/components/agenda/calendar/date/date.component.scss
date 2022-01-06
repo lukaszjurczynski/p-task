@@ -1,0 +1,107 @@
+@import "src/customstyles/index";
+
+:host {
+    min-width: 350px;
+    background-color: #fff;
+}
+
+.date-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: $default-gutter;
+    background-color: $color-primary;
+
+    &__date {
+        color: #fff;
+        margin: 0;
+    }
+    .icon-container {
+        position: relative;
+        width: 45px;
+        height: 45px;
+        background-color: $background-heading-icons;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: $icon-radius;
+        .icon {
+            max-width: 25px;
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+        
+        }
+    }
+    
+    
+    .action-buttons {
+        margin-left: auto;
+        .btn {
+            transform: unset;
+            padding: 10px;
+            border-radius: 50%;
+            &:hover {
+                .arrow {
+                    border-width: 0 2px 2px 0;
+                }
+            }
+        }
+        .arrow {
+            border: solid #fff;
+            border-width: 0 1px 1px 0;
+            display: inline-block;
+            padding: 3px;
+    
+            &.right {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+            
+            &.left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+            }
+          }
+    }
+}
+
+.date-main {
+    padding: $default-gutter;
+    border-bottom: $border;
+    .day-list {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        list-style-type: none;
+        margin: 0 0 10px;
+        padding: 0;
+        text-align: center;
+        p {
+            margin: 0;
+            font-weight: 300;
+        }
+    }
+    .days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        .day {
+            text-align: center;
+            padding: 5px;
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+            &.different {
+                opacity: .3;
+            }
+            &.active {
+                background-color: $color-primary;
+                color: #fff;
+            }
+        }
+    }
+}
+

@@ -12,9 +12,9 @@ app-root {
     aside {
         background-color: $background-color-navigation;
         max-width: 90px;
-        padding: $default-gutter;
         flex: 1;
         height: calc(100% - 60px);
+        padding: $default-gutter;
     }
     main {
         background-color: $background-color;
