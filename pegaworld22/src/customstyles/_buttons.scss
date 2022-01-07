@@ -11,6 +11,12 @@
     &:active {
         transform: translateY(0);
     }
+    &--primary {
+        background-color: $color-primary;
+        color: #fff;
+        padding: 10px;
+        border-radius: 30px;
+    }
     &--round {
         background-color: $background-button-round;
         color: #fff;

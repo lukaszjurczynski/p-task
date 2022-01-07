@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { CalendarComponent } from './components/agenda/calendar/calendar.component';
 import { DateComponent } from './components/agenda/calendar/date/date.component';
 import { DetailsComponent } from './components/agenda/calendar/details/details.component';
+import { EventListComponent } from './components/events/event-list/event-list.component';
 
 @NgModule({
   declarations: [
@@ -17,13 +18,14 @@ import { DetailsComponent } from './components/agenda/calendar/details/details.c
     HeaderComponent,
     CalendarComponent,
     DateComponent,
-    DetailsComponent
+    DetailsComponent,
+    EventListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule
-  ],
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

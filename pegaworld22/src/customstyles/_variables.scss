@@ -9,6 +9,7 @@ $background-color-navigation: #252c32;
 $background-button-round: lighten($background-color-navigation, 25%);
 $background-heading-icons: darken($color-primary, 10%);
 $default-gutter: 20px;
+$background-table-header: #f5f5f5;
 
 $border-radius-input: 30px;
 $round-radius: 50%;
@@ -25,6 +26,8 @@ $size-s: 450px;
 $title-font-size: 1.8rem;
 $date-font-size: 1.4rem;
 
+// FILTERS
+$filter-white: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 @mixin typography-title {
     margin: 0 0 $default-gutter;
     font-size: $title-font-size;
@@ -36,4 +39,12 @@ $date-font-size: 1.4rem;
     font-size: $date-font-size;
     color: $text-color;
     font-weight: 400;
+}
+
+@mixin container {
+    background-color: #fff;
+    padding: $default-gutter;
+    display: block;
+    width: 100%;
+    border-radius: $icon-radius;
 }
