@@ -82,9 +82,6 @@ table, th, td {
                 flex-direction: column;
                 height: 100%;
                 
-                th:first-of-type {
-                    min-height: 120px;
-                }
                 & > * {
                     border: unset;
                     flex-basis: 100%;

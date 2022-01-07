@@ -10,6 +10,7 @@ import { CalendarComponent } from './components/agenda/calendar/calendar.compone
 import { DateComponent } from './components/agenda/calendar/date/date.component';
 import { DetailsComponent } from './components/agenda/calendar/details/details.component';
 import { EventListComponent } from './components/events/event-list/event-list.component';
+import { AttendeesListComponent } from './components/attendees/attendees-list/attendees-list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EventListComponent } from './components/events/event-list/event-list.co
     CalendarComponent,
     DateComponent,
     DetailsComponent,
-    EventListComponent
+    EventListComponent,
+    AttendeesListComponent
   ],
   imports: [
     BrowserModule,

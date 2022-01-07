@@ -1,0 +1,12 @@
+.component-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: $default-gutter;
+    .title {
+        @include typography-title;
+        margin: 0;
+    }
+}

@@ -1,20 +1,20 @@
 <div class="component-header">
     <div class="icon-container">
-        <img src="assets/images/icons/icon-calendar-add-empty.svg" alt="calendar icon" class="icon"> 
+        <img src="assets/images/icons/icon-attendees-empty.svg" alt="calendar icon" class="icon"> 
     </div>
-    <h3 class="title">Manage Events</h3>  
+    <h3 class="title">Manage Attendees</h3>  
 </div>
 <div class="container">
-    <button class="btn btn--primary add-event"><img src="assets/images/icons/icon-plus.svg" alt="add icon" class="icon"> Add event</button>
+    <button class="btn btn--primary add-user"><img src="assets/images/icons/icon-plus.svg" alt="add icon" class="icon"> Add attendee</button>
     <div class="actions">
-        <div class="action">
+        <!-- <div class="action">
             <label for="bulk">Edit selected: </label>
             <select class="form-control" id="bulk" ngModel name="bulk" required>
                 <option>Delete</option>
                 <option>Change status</option>
                 <option>Change date</option>
             </select>
-        </div>
+        </div> -->
         <div class="searchbar">
             <form class="searchbar__form">
                   <img src="assets/images/icons/icon-search.svg" alt="search icon" class="searchicon">
@@ -25,29 +25,29 @@
     <table class="main-table">
         <thead>
             <tr>
-                <td class="checkbox"><input type="checkbox" id="selectall" name="selectall"></td>
+                <!-- <td class="checkbox"><input type="checkbox" id="selectall" name="selectall"></td> -->
                 <th *ngFor = "let header of headers">{{header}}</th>
             </tr>
         </thead>
-        <tr *ngFor = "let event of events" class="content">
-            <td class="checkbox"><input type="checkbox" id="selecteach" name="selecteach"></td>
-            <td class="event-name">
-                <a href="#">{{event.name}}</a>
+        <tr *ngFor = "let user of users" class="content">
+            <!-- <td class="checkbox"><input type="checkbox" id="selecteach" name="selecteach"></td> -->
+            <td class="user-name">
+                {{user.firstName}}
             </td>
             <td>
-                <a href="#">{{event.lecturer}}</a>
+                {{user.lastName}}
             </td>
             <td>
-                {{event.location}}
+                {{user.email}}
             </td>
             <td>
-                {{event.date}}
+                {{user.phone}}
             </td>
             <td>
-                {{event.status}}
+                {{user.company}}
             </td>
             <td>
-                <a href="#">{{event.attendees}}</a>
+                {{user.role}}
             </td>
         </tr>
     </table>

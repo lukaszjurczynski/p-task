@@ -10,14 +10,15 @@
     align-content: flex-start;
 }
 
+
 .container {
     @include container;
 }
 
-.add-event {
+.add-user {
     display: flex;
     align-items: center;
-    min-width: 120px;
+    min-width: 135px;
     gap: 10px;
     .icon {
         max-width: 25px;
@@ -67,18 +68,6 @@
                     &::placeholder {
                         color: transparent;
                     }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: $size-m) {
-    .main-table {    
-        thead {
-            tr {
-                th:first-of-type {
-                    min-height: 120px;
                 }
             }
         }
