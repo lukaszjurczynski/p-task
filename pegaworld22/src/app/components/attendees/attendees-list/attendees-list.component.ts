@@ -14,7 +14,7 @@ export class AttendeesListComponent implements OnInit {
       "lastName" : "Morana",
       "email" : "ym@pega.com",
       "phone" : "+49123412341234",
-      "company" : "Pega Clinet",
+      "company" : "Pega Client",
       "role": "Sales manager"
     },
     {
@@ -22,7 +22,7 @@ export class AttendeesListComponent implements OnInit {
       "lastName" : "Meline",
       "email" : "fm@pega.com",
       "phone" : "+49123412341234",
-      "company" : "Other Clinet",
+      "company" : "OPega Client",
       "role": "Sales manager"
     },
     {
@@ -30,7 +30,7 @@ export class AttendeesListComponent implements OnInit {
       "lastName" : "Faiza",
       "email" : "bf@pega.com",
       "phone" : "+49123412341234",
-      "company" : "Governement Inst",
+      "company" : "Government Inst",
       "role": "Sales manager"
     },
     {
@@ -46,7 +46,7 @@ export class AttendeesListComponent implements OnInit {
       "lastName" : "Charon",
       "email" : "lc@pega.com",
       "phone" : "+49123412341234",
-      "company" : "Pega Clinet",
+      "company" : "Pega Client",
       "role": "Solution specialist"
     },
     {
@@ -54,7 +54,7 @@ export class AttendeesListComponent implements OnInit {
       "lastName" : "Kiana",
       "email" : "kk@pega.com",
       "phone" : "+49123412341234",
-      "company" : "Pega Headquarers",
+      "company" : "Pega Headquarters",
       "role": "Developer"
     },
     {

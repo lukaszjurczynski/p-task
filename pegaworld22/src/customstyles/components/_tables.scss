@@ -14,6 +14,18 @@
             padding: 5px;
             text-align: left;
         }
+        .Scheduled {
+            color: $scheduled
+        }
+        .Canceled {
+            color: $canceled;
+        }
+        .Completed {
+            color: $completed;
+        }
+        .Inprogress {
+            color: $inprogress
+        }
     }
 }
 
