@@ -17,6 +17,17 @@
         padding: 10px;
         border-radius: 30px;
     }
+    &--secondary {
+        background-color: #fff;
+        border: $border;
+        color: $color-primary;
+        padding: 10px;
+        border-color: $color-primary;
+        border-radius: 30px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
     &--round {
         background-color: $background-button-round;
         color: #fff;

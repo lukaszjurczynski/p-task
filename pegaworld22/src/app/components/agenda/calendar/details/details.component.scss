@@ -11,6 +11,12 @@
     .details {
         .title {
             @include typography-title;
+            .additional {
+                margin: 0;
+                font-size: $small-font-size;
+                color: $text-color;
+                font-weight: 400;
+            }
         }
         .for-day {
             .date {
@@ -54,6 +60,10 @@
                             text-decoration: underline;
                         }
                     }
+                }
+                .full {
+                    pointer-events: none;
+                    opacity: .3;
                 }
             }
         }
