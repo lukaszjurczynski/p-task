@@ -16,7 +16,7 @@ export class EventListComponent implements OnInit {
       "location" : "Online",
       "date" : "May 24, 2022 08:30am",
       "status" : "Scheduled",
-      "attendees": "11/30"
+      "attendees": "30/30"
     },
     {
       "name" : "StepChange: Embracing a Customer-first Vision to Simplify Service",
@@ -56,7 +56,7 @@ export class EventListComponent implements OnInit {
       "location" : "Online",
       "date" : "May 24, 2022 12:30am",
       "status" : "Scheduled",
-      "attendees": "30/30"
+      "attendees": "29/30"
     },
     {
       "name" : "What’s Next? 5 Tech Trends Shaping the Future",
@@ -64,7 +64,7 @@ export class EventListComponent implements OnInit {
       "location" : "Online",
       "date" : "May 24, 2022 14:30am",
       "status" : "Completed",
-      "attendees": "30/30"
+      "attendees": "26/30"
     },
     {
       "name" : "Pega 101: Overview of Pega’s Vision and Technologies",
@@ -207,7 +207,7 @@ export class EventListComponent implements OnInit {
       "location" : "Online",
       "date" : "May 26, 2022 12:30am",
       "status" : "Scheduled",
-      "attendees": "30/30"
+      "attendees": "12/30"
     },
     {
       "name" : "Scotiabank’s Evolving Global Reuse Strategy – Forming the Business COE",
@@ -215,7 +215,7 @@ export class EventListComponent implements OnInit {
       "location" : "Online",
       "date" : "May 26, 2022 14:30am",
       "status" : "Scheduled",
-      "attendees": "30/30"
+      "attendees": "16/30"
     },
     {
       "name" : "Pega 101: Overview of Pega’s Vision and Technologies",
