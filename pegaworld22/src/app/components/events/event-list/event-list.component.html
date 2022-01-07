@@ -6,14 +6,21 @@
 </div>
 <div class="container">
     <button class="btn btn--primary add-event"><img src="assets/images/icons/icon-plus.svg" alt="add icon" class="icon"> Add event</button>
-    <div class="actions top">
+    <div class="actions">
+        <div class="action">
+            <label for="bulk">Edit selected: </label>
+            <select class="form-control" id="bulk" ngModel name="bulk" required>
+                <option>Delete</option>
+                <option>Change status</option>
+                <option>Change date</option>
+            </select>
+        </div>
         <div class="searchbar">
             <form class="searchbar__form">
                   <img src="assets/images/icons/icon-search.svg" alt="search icon" class="searchicon">
                   <input matInput placeholder="Search..." class="input">
               </form>
         </div>
-
     </div>
     <table class="main-table">
         <thead>
@@ -43,15 +50,7 @@
                 <a href="#">{{event.attendees}}</a>
             </td>
         </tr>
-
-        <!-- <tr class="event">
-            <td><input type="checkbox" id="scales" name="scales"></td>
-            <th><a href="#">The Power to Simplify: What You Need to Crush Complexity</a></th>
-            <th><a href="#">Thomas Nicolson</a></th>
-            <th>Online</th>
-            <th>May 24, 2022 08:30am</th>
-            <th>Scheduled</th>
-            <th><a href="#">11/30</a></th>
-        </tr> -->
     </table>
+    <div class="pagination"><p>Page <span>1 </span>of 4</p><button class="btn"><i class="arrow left"></i></button><button class="btn"><i class="arrow right"></i></button></div>
+
 </div>

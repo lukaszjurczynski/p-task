@@ -22,6 +22,45 @@ table, th, td {
     border-collapse: collapse;
 }
 
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    p {
+        padding-right: 10px;
+        span {
+            font-weight: 700
+        }
+    }
+        .btn {
+            transform: unset;
+            padding: 10px;
+            border-radius: 50%;
+            &:hover {
+                .arrow {
+                    border-width: 0 2px 2px 0;
+                }
+            }
+        }
+        .arrow {
+            border: solid #000;
+            border-width: 0 1px 1px 0;
+            display: inline-block;
+            padding: 3px;
+    
+            &.right {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+            
+            &.left {
+                border-color: rgba(#000, .4);
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+            }
+          }
+}
+
 @media (max-width: $size-m) {
     .main-table {
         display: flex;

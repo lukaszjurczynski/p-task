@@ -38,8 +38,20 @@
 }
 .actions {
     margin-bottom: $default-gutter;
+    display: flex;
+    align-items: center;
+    margin-top: $default-gutter;
+    flex-wrap: wrap;
+    gap: 10px;
+    .action {
+        select {
+            padding: 5px;
+            border: $border;
+            border-radius: $icon-radius;
+        }
+    }
     .searchbar {
-        margin-top: $default-gutter;
+        margin-left: auto;
         max-width: 250px;
         flex-grow: 1;
         &__form {
