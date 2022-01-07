@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,13 @@ import { DateComponent } from './components/agenda/calendar/date/date.component'
 import { DetailsComponent } from './components/agenda/calendar/details/details.component';
 import { EventListComponent } from './components/events/event-list/event-list.component';
 import { AttendeesListComponent } from './components/attendees/attendees-list/attendees-list.component';
+
+const appRoutes: Routes = [
+  {path: "", component: CalendarComponent},
+  {path: "agenda", component: CalendarComponent},
+  {path: "events", component: EventListComponent},
+  {path: "users", component: AttendeesListComponent}
+]
 
 @NgModule({
   declarations: [
@@ -26,7 +34,8 @@ import { AttendeesListComponent } from './components/attendees/attendees-list/at
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes)
     ],
   providers: [],
   bootstrap: [AppComponent]
