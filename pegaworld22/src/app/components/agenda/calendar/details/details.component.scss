@@ -30,7 +30,7 @@
                     border-right: $border;
                     padding-right: 10px;
                     .start {
-                        font-size: $title-font-size;
+                        font-size: $default-font-size;
                         color: $text-color-heading;
                         font-weight: 700;
                     }
@@ -48,6 +48,7 @@
                         color: $color-primary;
                         text-decoration: unset;
                         font-weight: 400;
+                        font-size: $default-font-size;
                         &:hover {
                             cursor: pointer;
                             text-decoration: underline;
