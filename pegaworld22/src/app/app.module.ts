@@ -12,9 +12,10 @@ import { DateComponent } from './components/agenda/calendar/date/date.component'
 import { DetailsComponent } from './components/agenda/calendar/details/details.component';
 import { EventListComponent } from './components/events/event-list/event-list.component';
 import { AttendeesListComponent } from './components/attendees/attendees-list/attendees-list.component';
+import { HomepageContentComponent } from './components/homepage/homepage-content/homepage-content.component';
 
 const appRoutes: Routes = [
-  {path: "", component: CalendarComponent},
+  {path: "", component: HomepageContentComponent},
   {path: "agenda", component: CalendarComponent},
   {path: "events", component: EventListComponent},
   {path: "users", component: AttendeesListComponent}
@@ -29,8 +30,9 @@ const appRoutes: Routes = [
     DateComponent,
     DetailsComponent,
     EventListComponent,
-    AttendeesListComponent
-  ],
+    AttendeesListComponent,
+    HomepageContentComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
